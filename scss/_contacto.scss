@@ -1,0 +1,33 @@
+@mixin flex-row-center{
+    display: flex;
+justify-content: space-around;
+align-items: center;}
+.main {background-image:  url(https://babycocina.com/wp-content/uploads/2020/09/sushi-casero.jpg);
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;}
+.main3 {
+    @extend .main;
+    display: flex;
+    flex-direction: column;
+justify-content: center;
+align-items: center;
+height: 700px;
+@media screen and (max-width:1100px) and (min-width:700px){
+    height: 1500px;};
+    @media screen and (max-width:700px){
+        height: 1500px;}}
+.main2 {
+    @extend .main;
+    height: 500px;
+    @include flex-row-center;
+@media screen and (max-width:1100px) and (min-width:700px){
+flex-direction: column;
+    justify-content: center;
+    align-items: center;};
+    @media screen and (max-width:700px){
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}}
+.mapa {height: 220px;
+width: 350px;}

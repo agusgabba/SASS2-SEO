@@ -1,0 +1,22 @@
+.header {height: 70px; 
+    background-image: linear-gradient(to bottom,red,black);
+@media screen and (max-width:1100px) and (min-width:700px){
+    height: 200px;};
+    @media screen and (max-width:700px){
+        height: 200px;}}
+.nav-link { color: white; 
+    font-size: 20px; 
+    font-family: verdana; 
+    font-weight: 400px;
+text-decoration: none;
+transition: 0.2s 0.5 ease;}
+.nav {display: flex;
+list-style-type: none;
+justify-content: space-around;
+align-items: center;
+@media screen and (max-width:1100px) and (min-width:700px){
+display: flex !important;
+flex-direction: column !important;};
+    @media screen and (max-width:700px){
+        display: flex !important;
+        flex-direction: column !important;}}
